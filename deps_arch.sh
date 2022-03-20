@@ -5,5 +5,5 @@ if [ "$EUID" -ne 0 ]
  exit
 fi
 
-deps_arch="git vim curl wget base-devel"
+deps_arch="git vim curl wget base base-devel"
 pacman -S --noconfirm $deps_arch
